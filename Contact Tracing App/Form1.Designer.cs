@@ -48,6 +48,7 @@ namespace Contact_Tracing_App
             this.dt = new System.Windows.Forms.Label();
             this.txtbxTP = new System.Windows.Forms.TextBox();
             this.tp = new System.Windows.Forms.Label();
+            this.bttnsave = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtbxFN
@@ -239,11 +240,22 @@ namespace Contact_Tracing_App
             this.tp.TabIndex = 18;
             this.tp.Text = "TEMPERATURE";
             // 
+            // bttnsave
+            // 
+            this.bttnsave.Location = new System.Drawing.Point(636, 436);
+            this.bttnsave.Name = "bttnsave";
+            this.bttnsave.Size = new System.Drawing.Size(108, 32);
+            this.bttnsave.TabIndex = 19;
+            this.bttnsave.Text = "SUBMIT";
+            this.bttnsave.UseVisualStyleBackColor = true;
+            this.bttnsave.Click += new System.EventHandler(this.bttnsave_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(765, 480);
+            this.Controls.Add(this.bttnsave);
             this.Controls.Add(this.tp);
             this.Controls.Add(this.txtbxTP);
             this.Controls.Add(this.dt);
@@ -290,6 +302,7 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.Label dt;
         private System.Windows.Forms.TextBox txtbxTP;
         private System.Windows.Forms.Label tp;
+        private System.Windows.Forms.Button bttnsave;
     }
 }
 
