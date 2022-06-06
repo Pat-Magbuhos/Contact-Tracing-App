@@ -32,5 +32,10 @@ namespace Contact_Tracing_App
             doc.WriteLine("Temperature: " + txtbxTP.Text);
             doc.Close();
         }
+
+        private void lst_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("                                                               SYMPTOMS                                                       Fever           CoughShortness of Breath         Fatigue         Body Aches          Headache            Sorethroat          Loss of taste or smell          Diarrhea");
+        }            
     }
 }

@@ -49,6 +49,10 @@ namespace Contact_Tracing_App
             this.txtbxTP = new System.Windows.Forms.TextBox();
             this.tp = new System.Windows.Forms.Label();
             this.bttnsave = new System.Windows.Forms.Button();
+            this.txtbxSYMPTMS = new System.Windows.Forms.TextBox();
+            this.symptms = new System.Windows.Forms.Label();
+            this.lst = new System.Windows.Forms.Button();
+            this.health = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtbxFN
@@ -234,7 +238,7 @@ namespace Contact_Tracing_App
             // tp
             // 
             this.tp.AutoSize = true;
-            this.tp.Location = new System.Drawing.Point(34, 270);
+            this.tp.Location = new System.Drawing.Point(43, 270);
             this.tp.Name = "tp";
             this.tp.Size = new System.Drawing.Size(89, 13);
             this.tp.TabIndex = 18;
@@ -250,11 +254,54 @@ namespace Contact_Tracing_App
             this.bttnsave.UseVisualStyleBackColor = true;
             this.bttnsave.Click += new System.EventHandler(this.bttnsave_Click);
             // 
+            // txtbxSYMPTMS
+            // 
+            this.txtbxSYMPTMS.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxSYMPTMS.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtbxSYMPTMS.Location = new System.Drawing.Point(31, 380);
+            this.txtbxSYMPTMS.Name = "txtbxSYMPTMS";
+            this.txtbxSYMPTMS.Size = new System.Drawing.Size(101, 25);
+            this.txtbxSYMPTMS.TabIndex = 20;
+            this.txtbxSYMPTMS.Text = "--Yes/No--";
+            this.txtbxSYMPTMS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // symptms
+            // 
+            this.symptms.AutoSize = true;
+            this.symptms.Location = new System.Drawing.Point(28, 335);
+            this.symptms.Name = "symptms";
+            this.symptms.Size = new System.Drawing.Size(284, 13);
+            this.symptms.TabIndex = 21;
+            this.symptms.Text = "ARE YOU EXPERIENCING ANY COVID-19 SYMPTOMS?";
+            // 
+            // lst
+            // 
+            this.lst.Location = new System.Drawing.Point(31, 351);
+            this.lst.Name = "lst";
+            this.lst.Size = new System.Drawing.Size(127, 23);
+            this.lst.TabIndex = 22;
+            this.lst.Text = "Covid-19 Symptoms";
+            this.lst.UseVisualStyleBackColor = true;
+            this.lst.Click += new System.EventHandler(this.lst_Click);
+            // 
+            // health
+            // 
+            this.health.AutoSize = true;
+            this.health.Location = new System.Drawing.Point(332, 308);
+            this.health.Name = "health";
+            this.health.Size = new System.Drawing.Size(108, 13);
+            this.health.TabIndex = 23;
+            this.health.Text = "--HEALTH STATUS--";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(765, 480);
+            this.Controls.Add(this.health);
+            this.Controls.Add(this.lst);
+            this.Controls.Add(this.symptms);
+            this.Controls.Add(this.txtbxSYMPTMS);
             this.Controls.Add(this.bttnsave);
             this.Controls.Add(this.tp);
             this.Controls.Add(this.txtbxTP);
@@ -303,6 +350,10 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.TextBox txtbxTP;
         private System.Windows.Forms.Label tp;
         private System.Windows.Forms.Button bttnsave;
+        private System.Windows.Forms.TextBox txtbxSYMPTMS;
+        private System.Windows.Forms.Label symptms;
+        private System.Windows.Forms.Button lst;
+        private System.Windows.Forms.Label health;
     }
 }
 
