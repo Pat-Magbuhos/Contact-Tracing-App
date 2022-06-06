@@ -22,7 +22,11 @@ namespace Contact_Tracing_App
         {
             StreamWriter doc = new StreamWriter(@"C:\Users\Mags\Documents\Contact Tracing App\Record.txt", true);
             doc.WriteLine("First Name: " + txtbxFN.Text);
-            doc.WriteLine("Middle Name " + txtbxMN.Text);
+            doc.WriteLine("Middle Name: " + txtbxMN.Text);
+            doc.WriteLine("Last Name: " + txtbxLN.Text);
+            doc.WriteLine("Street Address: " + txtbxSTRT.Text);
+            doc.WriteLine("Barangay: " + txtbxBRNGY.Text);
+            doc.WriteLine("Province and Municipality: " + txtbxPRV.Text);
             doc.Close();
         }
     }

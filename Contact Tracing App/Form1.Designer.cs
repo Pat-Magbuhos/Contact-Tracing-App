@@ -107,9 +107,9 @@ namespace Contact_Tracing_App
             this.ln.AutoSize = true;
             this.ln.Location = new System.Drawing.Point(581, 105);
             this.ln.Name = "ln";
-            this.ln.Size = new System.Drawing.Size(82, 13);
+            this.ln.Size = new System.Drawing.Size(68, 13);
             this.ln.TabIndex = 5;
-            this.ln.Text = "MIDDLE NAME";
+            this.ln.Text = "LAST NAME";
             // 
             // personalinfo
             // 
