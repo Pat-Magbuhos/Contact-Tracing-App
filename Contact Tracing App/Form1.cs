@@ -20,9 +20,10 @@ namespace Contact_Tracing_App
 
         private void bttnsave_Click(object sender, EventArgs e)
         {
-            StreamWriter doc = new StreamWriter(@"C:\Users\Mags\Documents\Contact Tracing App\Record.txt");
-            doc.WriteLine("Test");
-            doc.Close(); 
+            StreamWriter doc = new StreamWriter(@"C:\Users\Mags\Documents\Contact Tracing App\Record.txt", true);
+            doc.WriteLine("First Name: " + txtbxFN.Text);
+            doc.WriteLine("Middle Name " + txtbxMN.Text);
+            doc.Close();
         }
     }
 }
