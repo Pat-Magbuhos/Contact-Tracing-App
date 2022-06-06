@@ -53,6 +53,8 @@ namespace Contact_Tracing_App
             this.symptms = new System.Windows.Forms.Label();
             this.lst = new System.Windows.Forms.Button();
             this.health = new System.Windows.Forms.Label();
+            this.spcfy = new System.Windows.Forms.Label();
+            this.txtbxSPCFY = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtbxFN
@@ -293,11 +295,33 @@ namespace Contact_Tracing_App
             this.health.TabIndex = 23;
             this.health.Text = "--HEALTH STATUS--";
             // 
+            // spcfy
+            // 
+            this.spcfy.AutoSize = true;
+            this.spcfy.Location = new System.Drawing.Point(475, 335);
+            this.spcfy.Name = "spcfy";
+            this.spcfy.Size = new System.Drawing.Size(137, 13);
+            this.spcfy.TabIndex = 24;
+            this.spcfy.Text = "IF YES, PLEASE SPECIFY:";
+            // 
+            // txtbxSPCFY
+            // 
+            this.txtbxSPCFY.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxSPCFY.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtbxSPCFY.Location = new System.Drawing.Point(478, 351);
+            this.txtbxSPCFY.Name = "txtbxSPCFY";
+            this.txtbxSPCFY.Size = new System.Drawing.Size(101, 25);
+            this.txtbxSPCFY.TabIndex = 25;
+            this.txtbxSPCFY.Text = "--Ex: Fever--";
+            this.txtbxSPCFY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(765, 480);
+            this.Controls.Add(this.txtbxSPCFY);
+            this.Controls.Add(this.spcfy);
             this.Controls.Add(this.health);
             this.Controls.Add(this.lst);
             this.Controls.Add(this.symptms);
@@ -354,6 +378,8 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.Label symptms;
         private System.Windows.Forms.Button lst;
         private System.Windows.Forms.Label health;
+        private System.Windows.Forms.Label spcfy;
+        private System.Windows.Forms.TextBox txtbxSPCFY;
     }
 }
 
