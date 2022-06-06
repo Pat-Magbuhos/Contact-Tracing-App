@@ -55,6 +55,7 @@ namespace Contact_Tracing_App
             this.health = new System.Windows.Forms.Label();
             this.spcfy = new System.Windows.Forms.Label();
             this.txtbxSPCFY = new System.Windows.Forms.TextBox();
+            this.prvcy = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtbxFN
@@ -315,11 +316,21 @@ namespace Contact_Tracing_App
             this.txtbxSPCFY.Text = "--Ex: Fever--";
             this.txtbxSPCFY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // prvcy
+            // 
+            this.prvcy.Location = new System.Drawing.Point(16, 11);
+            this.prvcy.Name = "prvcy";
+            this.prvcy.Size = new System.Drawing.Size(48, 27);
+            this.prvcy.TabIndex = 26;
+            this.prvcy.UseVisualStyleBackColor = true;
+            this.prvcy.Click += new System.EventHandler(this.prvcy_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(765, 480);
+            this.Controls.Add(this.prvcy);
             this.Controls.Add(this.txtbxSPCFY);
             this.Controls.Add(this.spcfy);
             this.Controls.Add(this.health);
@@ -380,6 +391,7 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.Label health;
         private System.Windows.Forms.Label spcfy;
         private System.Windows.Forms.TextBox txtbxSPCFY;
+        private System.Windows.Forms.Button prvcy;
     }
 }
 
