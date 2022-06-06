@@ -27,6 +27,9 @@ namespace Contact_Tracing_App
             doc.WriteLine("Street Address: " + txtbxSTRT.Text);
             doc.WriteLine("Barangay: " + txtbxBRNGY.Text);
             doc.WriteLine("Province and Municipality: " + txtbxPRV.Text);
+            doc.WriteLine("Age: " + txtbxAG.Text);
+            doc.WriteLine("Date: " + txtbxDT.Text);
+            doc.WriteLine("Temperature: " + txtbxTP.Text);
             doc.Close();
         }
     }

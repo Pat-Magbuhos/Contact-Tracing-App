@@ -36,8 +36,8 @@ namespace Contact_Tracing_App
             this.txtbxLN = new System.Windows.Forms.TextBox();
             this.ln = new System.Windows.Forms.Label();
             this.personalinfo = new System.Windows.Forms.Label();
-            this.strt = new System.Windows.Forms.TextBox();
-            this.txtbxSTRT = new System.Windows.Forms.Label();
+            this.txtbxSTRT = new System.Windows.Forms.TextBox();
+            this.strt = new System.Windows.Forms.Label();
             this.txtbxBRNGY = new System.Windows.Forms.TextBox();
             this.brgy = new System.Windows.Forms.Label();
             this.txtbxPRV = new System.Windows.Forms.TextBox();
@@ -120,25 +120,25 @@ namespace Contact_Tracing_App
             this.personalinfo.TabIndex = 6;
             this.personalinfo.Text = "-PERSONAL INFORMATION-";
             // 
-            // strt
-            // 
-            this.strt.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.strt.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.strt.Location = new System.Drawing.Point(37, 131);
-            this.strt.Name = "strt";
-            this.strt.Size = new System.Drawing.Size(242, 25);
-            this.strt.TabIndex = 7;
-            this.strt.Text = "--Ex: B1 L3 Harurut Street--";
-            this.strt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // txtbxSTRT
             // 
-            this.txtbxSTRT.AutoSize = true;
-            this.txtbxSTRT.Location = new System.Drawing.Point(89, 160);
+            this.txtbxSTRT.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxSTRT.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtbxSTRT.Location = new System.Drawing.Point(37, 131);
             this.txtbxSTRT.Name = "txtbxSTRT";
-            this.txtbxSTRT.Size = new System.Drawing.Size(105, 13);
-            this.txtbxSTRT.TabIndex = 8;
-            this.txtbxSTRT.Text = "STREET ADDRESS";
+            this.txtbxSTRT.Size = new System.Drawing.Size(242, 25);
+            this.txtbxSTRT.TabIndex = 7;
+            this.txtbxSTRT.Text = "--Ex: B1 L3 Harurut Street--";
+            this.txtbxSTRT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // strt
+            // 
+            this.strt.AutoSize = true;
+            this.strt.Location = new System.Drawing.Point(89, 160);
+            this.strt.Name = "strt";
+            this.strt.Size = new System.Drawing.Size(105, 13);
+            this.strt.TabIndex = 8;
+            this.strt.Text = "STREET ADDRESS";
             // 
             // txtbxBRNGY
             // 
@@ -266,8 +266,8 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.txtbxPRV);
             this.Controls.Add(this.brgy);
             this.Controls.Add(this.txtbxBRNGY);
-            this.Controls.Add(this.txtbxSTRT);
             this.Controls.Add(this.strt);
+            this.Controls.Add(this.txtbxSTRT);
             this.Controls.Add(this.personalinfo);
             this.Controls.Add(this.ln);
             this.Controls.Add(this.txtbxLN);
@@ -290,8 +290,8 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.TextBox txtbxLN;
         private System.Windows.Forms.Label ln;
         private System.Windows.Forms.Label personalinfo;
-        private System.Windows.Forms.TextBox strt;
-        private System.Windows.Forms.Label txtbxSTRT;
+        private System.Windows.Forms.TextBox txtbxSTRT;
+        private System.Windows.Forms.Label strt;
         private System.Windows.Forms.TextBox txtbxBRNGY;
         private System.Windows.Forms.Label brgy;
         private System.Windows.Forms.TextBox txtbxPRV;
