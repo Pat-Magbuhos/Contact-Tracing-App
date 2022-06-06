@@ -29,13 +29,35 @@ namespace Contact_Tracing_App
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.txtbxFN = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // txtbxFN
+            // 
+            this.txtbxFN.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxFN.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtbxFN.Location = new System.Drawing.Point(37, 76);
+            this.txtbxFN.Name = "txtbxFN";
+            this.txtbxFN.Size = new System.Drawing.Size(208, 26);
+            this.txtbxFN.TabIndex = 0;
+            this.txtbxFN.Text = "--First Name--";
+            this.txtbxFN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(765, 450);
+            this.Controls.Add(this.txtbxFN);
+            this.Name = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox txtbxFN;
     }
 }
 
