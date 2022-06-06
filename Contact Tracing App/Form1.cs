@@ -34,6 +34,19 @@ namespace Contact_Tracing_App
             doc.WriteLine("Spcification: " + txtbxSPCFY.Text);
             doc.WriteLine("");
             doc.Close();
+
+            MessageBox.Show("Thank You for Participating! Stay Safe");
+            txtbxFN.Text = "";
+            txtbxMN.Text = "";
+            txtbxLN.Text = "";
+            txtbxSTRT.Text = "";
+            txtbxBRNGY.Text = "";
+            txtbxPRV.Text = "";
+            txtbxAG.Text = "";
+            txtbxDT.Text = "";
+            txtbxTP.Text = "";
+            txtbxSYMPTMS.Text = "";
+            txtbxSPCFY.Text = "";
         }
 
         private void lst_Click(object sender, EventArgs e)
