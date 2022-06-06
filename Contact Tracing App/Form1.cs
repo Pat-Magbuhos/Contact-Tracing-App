@@ -29,6 +29,7 @@ namespace Contact_Tracing_App
             doc.WriteLine("Province and Municipality: " + txtbxPRV.Text);
             doc.WriteLine("Age: " + txtbxAG.Text);
             doc.WriteLine("Date: " + txtbxDT.Text);
+            doc.WriteLine("Contact Number: " + txtbxCNTCT.Text);
             doc.WriteLine("Temperature: " + txtbxTP.Text);
             doc.WriteLine("Experiencing andy Covid-19 Symptoms? " + txtbxSYMPTMS.Text);
             doc.WriteLine("Spcification: " + txtbxSPCFY.Text);
@@ -44,6 +45,7 @@ namespace Contact_Tracing_App
             txtbxPRV.Text = "";
             txtbxAG.Text = "";
             txtbxDT.Text = "";
+            txtbxCNTCT.Text = "";
             txtbxTP.Text = "";
             txtbxSYMPTMS.Text = "";
             txtbxSPCFY.Text = "";

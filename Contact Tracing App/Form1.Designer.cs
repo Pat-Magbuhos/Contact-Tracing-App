@@ -57,6 +57,8 @@ namespace Contact_Tracing_App
             this.spcfy = new System.Windows.Forms.Label();
             this.txtbxSPCFY = new System.Windows.Forms.TextBox();
             this.prvcy = new System.Windows.Forms.Button();
+            this.txtbxCNTCT = new System.Windows.Forms.TextBox();
+            this.cntct = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtbxFN
@@ -357,6 +359,28 @@ namespace Contact_Tracing_App
             this.prvcy.UseVisualStyleBackColor = true;
             this.prvcy.Click += new System.EventHandler(this.prvcy_Click);
             // 
+            // txtbxCNTCT
+            // 
+            this.txtbxCNTCT.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxCNTCT.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtbxCNTCT.Location = new System.Drawing.Point(295, 203);
+            this.txtbxCNTCT.Name = "txtbxCNTCT";
+            this.txtbxCNTCT.Size = new System.Drawing.Size(139, 25);
+            this.txtbxCNTCT.TabIndex = 27;
+            this.txtbxCNTCT.Text = "--Ex: 09510037642--";
+            this.txtbxCNTCT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // cntct
+            // 
+            this.cntct.AutoSize = true;
+            this.cntct.BackColor = System.Drawing.Color.Transparent;
+            this.cntct.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cntct.Location = new System.Drawing.Point(305, 231);
+            this.cntct.Name = "cntct";
+            this.cntct.Size = new System.Drawing.Size(122, 13);
+            this.cntct.TabIndex = 28;
+            this.cntct.Text = "CONTACT NUMBER";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -365,6 +389,8 @@ namespace Contact_Tracing_App
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(765, 480);
+            this.Controls.Add(this.cntct);
+            this.Controls.Add(this.txtbxCNTCT);
             this.Controls.Add(this.prvcy);
             this.Controls.Add(this.txtbxSPCFY);
             this.Controls.Add(this.spcfy);
@@ -430,6 +456,8 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.Label spcfy;
         private System.Windows.Forms.TextBox txtbxSPCFY;
         private System.Windows.Forms.Button prvcy;
+        private System.Windows.Forms.TextBox txtbxCNTCT;
+        private System.Windows.Forms.Label cntct;
     }
 }
 
