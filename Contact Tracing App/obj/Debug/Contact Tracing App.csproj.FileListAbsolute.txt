@@ -8,3 +8,4 @@ C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\Con
 C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\Contact Tracing App.csproj.CoreCompileInputs.cache
 C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\Contact Tracing App.exe
 C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\Contact Tracing App.pdb
+C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\Contact_Tracing_App.Form2.resources

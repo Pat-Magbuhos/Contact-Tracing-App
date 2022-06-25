@@ -21,6 +21,7 @@ namespace Contact_Tracing_App
         private void bttnsave_Click(object sender, EventArgs e)
         {
             StreamWriter doc = new StreamWriter(@"C:\Users\Mags\Documents\Contact Tracing App\Record.txt", true);
+            doc.WriteLine("Date: " + txtbxDT.Text);
             doc.WriteLine("First Name: " + txtbxFN.Text);
             doc.WriteLine("Middle Name: " + txtbxMN.Text);
             doc.WriteLine("Last Name: " + txtbxLN.Text);
@@ -28,7 +29,6 @@ namespace Contact_Tracing_App
             doc.WriteLine("Barangay: " + txtbxBRNGY.Text);
             doc.WriteLine("Province and Municipality: " + txtbxPRV.Text);
             doc.WriteLine("Age: " + txtbxAG.Text);
-            doc.WriteLine("Date: " + txtbxDT.Text);
             doc.WriteLine("Contact Number: " + txtbxCNTCT.Text);
             doc.WriteLine("Temperature: " + txtbxTP.Text);
             doc.WriteLine("Experiencing andy Covid-19 Symptoms? " + txtbxSYMPTMS.Text);
@@ -60,5 +60,7 @@ namespace Contact_Tracing_App
         {
             MessageBox.Show("In accordance to Data Privacy Act of 2012, please be guided that your personal information will only be shared when it is expressly authorized by law. Provided, that there are adequate safeguards for data privacy and security, and processing adheres to principle of transparency, legitimate purpose and proportionality.                                                                                                                                                        Also, please be reminded that non-cooperation of persons identified as having the notifiable disease, or affected by the health event of public concern, such as COVID19, is prohibited by law under Republic Act No. 11332. Thank you for your understanding in these difficult times.");         
         }
+
+       
     }
 }

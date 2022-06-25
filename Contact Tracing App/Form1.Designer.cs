@@ -177,7 +177,7 @@ namespace Contact_Tracing_App
             this.brgy.AutoSize = true;
             this.brgy.BackColor = System.Drawing.Color.Transparent;
             this.brgy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.brgy.Location = new System.Drawing.Point(360, 163);
+            this.brgy.Location = new System.Drawing.Point(347, 163);
             this.brgy.Name = "brgy";
             this.brgy.Size = new System.Drawing.Size(74, 13);
             this.brgy.TabIndex = 10;
@@ -320,11 +320,12 @@ namespace Contact_Tracing_App
             this.health.AutoSize = true;
             this.health.BackColor = System.Drawing.Color.Transparent;
             this.health.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.health.Location = new System.Drawing.Point(276, 261);
+            this.health.Location = new System.Drawing.Point(251, 261);
             this.health.Name = "health";
-            this.health.Size = new System.Drawing.Size(235, 25);
+            this.health.Size = new System.Drawing.Size(304, 25);
             this.health.TabIndex = 23;
-            this.health.Text = "--HEALTH STATUS--";
+            this.health.Text = "--HEALTH DECLARATION--";
+            this.health.Click += new System.EventHandler(this.health_Click);
             // 
             // spcfy
             // 
@@ -422,6 +423,7 @@ namespace Contact_Tracing_App
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
