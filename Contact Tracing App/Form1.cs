@@ -61,6 +61,24 @@ namespace Contact_Tracing_App
             MessageBox.Show("In accordance to Data Privacy Act of 2012, please be guided that your personal information will only be shared when it is expressly authorized by law. Provided, that there are adequate safeguards for data privacy and security, and processing adheres to principle of transparency, legitimate purpose and proportionality.                                                                                                                                                        Also, please be reminded that non-cooperation of persons identified as having the notifiable disease, or affected by the health event of public concern, such as COVID19, is prohibited by law under Republic Act No. 11332. Thank you for your understanding in these difficult times.");         
         }
 
-       
+        private void health_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void adminbttn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 F2 = new Form2();
+
+            F2.ShowDialog();
+            F2 = null;
+            this.Show();
+        }
     }
 }

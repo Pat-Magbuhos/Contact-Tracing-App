@@ -59,6 +59,7 @@ namespace Contact_Tracing_App
             this.prvcy = new System.Windows.Forms.Button();
             this.txtbxCNTCT = new System.Windows.Forms.TextBox();
             this.cntct = new System.Windows.Forms.Label();
+            this.adminbttn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtbxFN
@@ -382,6 +383,16 @@ namespace Contact_Tracing_App
             this.cntct.TabIndex = 28;
             this.cntct.Text = "CONTACT NUMBER";
             // 
+            // adminbttn
+            // 
+            this.adminbttn.Location = new System.Drawing.Point(16, 436);
+            this.adminbttn.Name = "adminbttn";
+            this.adminbttn.Size = new System.Drawing.Size(86, 37);
+            this.adminbttn.TabIndex = 29;
+            this.adminbttn.Text = "Admin";
+            this.adminbttn.UseVisualStyleBackColor = true;
+            this.adminbttn.Click += new System.EventHandler(this.adminbttn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -390,6 +401,7 @@ namespace Contact_Tracing_App
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(765, 480);
+            this.Controls.Add(this.adminbttn);
             this.Controls.Add(this.cntct);
             this.Controls.Add(this.txtbxCNTCT);
             this.Controls.Add(this.prvcy);
@@ -460,6 +472,7 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.Button prvcy;
         private System.Windows.Forms.TextBox txtbxCNTCT;
         private System.Windows.Forms.Label cntct;
+        private System.Windows.Forms.Button adminbttn;
     }
 }
 
