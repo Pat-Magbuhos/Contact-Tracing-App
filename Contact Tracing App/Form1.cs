@@ -68,7 +68,7 @@ namespace Contact_Tracing_App
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            timer1.Start();
         }
 
         private void adminbttn_Click(object sender, EventArgs e)
@@ -79,6 +79,12 @@ namespace Contact_Tracing_App
             F2.ShowDialog();
             F2 = null;
             this.Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            date.Text = DateTime.Now.ToLongDateString();
+            time.Text = DateTime.Now.ToLongTimeString();
         }
     }
 }

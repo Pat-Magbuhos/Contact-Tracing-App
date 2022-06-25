@@ -29,6 +29,7 @@ namespace Contact_Tracing_App
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txtbxFN = new System.Windows.Forms.TextBox();
             this.fn = new System.Windows.Forms.Label();
@@ -60,6 +61,9 @@ namespace Contact_Tracing_App
             this.txtbxCNTCT = new System.Windows.Forms.TextBox();
             this.cntct = new System.Windows.Forms.Label();
             this.adminbttn = new System.Windows.Forms.Button();
+            this.date = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.time = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtbxFN
@@ -88,7 +92,7 @@ namespace Contact_Tracing_App
             // 
             this.txtbxMN.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbxMN.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtbxMN.Location = new System.Drawing.Point(277, 67);
+            this.txtbxMN.Location = new System.Drawing.Point(251, 67);
             this.txtbxMN.Name = "txtbxMN";
             this.txtbxMN.Size = new System.Drawing.Size(208, 25);
             this.txtbxMN.TabIndex = 2;
@@ -100,7 +104,7 @@ namespace Contact_Tracing_App
             this.mn.AutoSize = true;
             this.mn.BackColor = System.Drawing.Color.Transparent;
             this.mn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mn.Location = new System.Drawing.Point(344, 95);
+            this.mn.Location = new System.Drawing.Point(305, 95);
             this.mn.Name = "mn";
             this.mn.Size = new System.Drawing.Size(93, 13);
             this.mn.TabIndex = 3;
@@ -110,7 +114,7 @@ namespace Contact_Tracing_App
             // 
             this.txtbxLN.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbxLN.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtbxLN.Location = new System.Drawing.Point(519, 67);
+            this.txtbxLN.Location = new System.Drawing.Point(463, 67);
             this.txtbxLN.Name = "txtbxLN";
             this.txtbxLN.Size = new System.Drawing.Size(208, 25);
             this.txtbxLN.TabIndex = 4;
@@ -122,7 +126,7 @@ namespace Contact_Tracing_App
             this.ln.AutoSize = true;
             this.ln.BackColor = System.Drawing.Color.Transparent;
             this.ln.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ln.Location = new System.Drawing.Point(583, 95);
+            this.ln.Location = new System.Drawing.Point(533, 95);
             this.ln.Name = "ln";
             this.ln.Size = new System.Drawing.Size(77, 13);
             this.ln.TabIndex = 5;
@@ -178,7 +182,7 @@ namespace Contact_Tracing_App
             this.brgy.AutoSize = true;
             this.brgy.BackColor = System.Drawing.Color.Transparent;
             this.brgy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.brgy.Location = new System.Drawing.Point(347, 163);
+            this.brgy.Location = new System.Drawing.Point(338, 163);
             this.brgy.Name = "brgy";
             this.brgy.Size = new System.Drawing.Size(74, 13);
             this.brgy.TabIndex = 10;
@@ -188,7 +192,7 @@ namespace Contact_Tracing_App
             // 
             this.txtbxPRV.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbxPRV.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtbxPRV.Location = new System.Drawing.Point(496, 126);
+            this.txtbxPRV.Location = new System.Drawing.Point(480, 126);
             this.txtbxPRV.Name = "txtbxPRV";
             this.txtbxPRV.Size = new System.Drawing.Size(250, 25);
             this.txtbxPRV.TabIndex = 11;
@@ -200,7 +204,7 @@ namespace Contact_Tracing_App
             this.prv.AutoSize = true;
             this.prv.BackColor = System.Drawing.Color.Transparent;
             this.prv.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prv.Location = new System.Drawing.Point(533, 163);
+            this.prv.Location = new System.Drawing.Point(513, 163);
             this.prv.Name = "prv";
             this.prv.Size = new System.Drawing.Size(191, 13);
             this.prv.TabIndex = 12;
@@ -254,7 +258,7 @@ namespace Contact_Tracing_App
             // 
             this.txtbxTP.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbxTP.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtbxTP.Location = new System.Drawing.Point(574, 318);
+            this.txtbxTP.Location = new System.Drawing.Point(569, 388);
             this.txtbxTP.Name = "txtbxTP";
             this.txtbxTP.Size = new System.Drawing.Size(101, 25);
             this.txtbxTP.TabIndex = 17;
@@ -266,7 +270,7 @@ namespace Contact_Tracing_App
             this.tp.AutoSize = true;
             this.tp.BackColor = System.Drawing.Color.Transparent;
             this.tp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tp.Location = new System.Drawing.Point(571, 303);
+            this.tp.Location = new System.Drawing.Point(566, 373);
             this.tp.Name = "tp";
             this.tp.Size = new System.Drawing.Size(100, 13);
             this.tp.TabIndex = 18;
@@ -275,7 +279,7 @@ namespace Contact_Tracing_App
             // bttnsave
             // 
             this.bttnsave.Font = new System.Drawing.Font("Papyrus", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnsave.Location = new System.Drawing.Point(636, 436);
+            this.bttnsave.Location = new System.Drawing.Point(645, 500);
             this.bttnsave.Name = "bttnsave";
             this.bttnsave.Size = new System.Drawing.Size(108, 32);
             this.bttnsave.TabIndex = 19;
@@ -287,7 +291,7 @@ namespace Contact_Tracing_App
             // 
             this.txtbxSYMPTMS.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbxSYMPTMS.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtbxSYMPTMS.Location = new System.Drawing.Point(44, 348);
+            this.txtbxSYMPTMS.Location = new System.Drawing.Point(39, 418);
             this.txtbxSYMPTMS.Name = "txtbxSYMPTMS";
             this.txtbxSYMPTMS.Size = new System.Drawing.Size(101, 25);
             this.txtbxSYMPTMS.TabIndex = 20;
@@ -299,7 +303,7 @@ namespace Contact_Tracing_App
             this.symptms.AutoSize = true;
             this.symptms.BackColor = System.Drawing.Color.Transparent;
             this.symptms.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.symptms.Location = new System.Drawing.Point(45, 303);
+            this.symptms.Location = new System.Drawing.Point(40, 373);
             this.symptms.Name = "symptms";
             this.symptms.Size = new System.Drawing.Size(327, 13);
             this.symptms.TabIndex = 21;
@@ -308,7 +312,7 @@ namespace Contact_Tracing_App
             // lst
             // 
             this.lst.Font = new System.Drawing.Font("Papyrus", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lst.Location = new System.Drawing.Point(44, 319);
+            this.lst.Location = new System.Drawing.Point(39, 389);
             this.lst.Name = "lst";
             this.lst.Size = new System.Drawing.Size(151, 25);
             this.lst.TabIndex = 22;
@@ -321,7 +325,7 @@ namespace Contact_Tracing_App
             this.health.AutoSize = true;
             this.health.BackColor = System.Drawing.Color.Transparent;
             this.health.Font = new System.Drawing.Font("Papyrus", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.health.Location = new System.Drawing.Point(251, 261);
+            this.health.Location = new System.Drawing.Point(246, 331);
             this.health.Name = "health";
             this.health.Size = new System.Drawing.Size(304, 25);
             this.health.TabIndex = 23;
@@ -333,7 +337,7 @@ namespace Contact_Tracing_App
             this.spcfy.AutoSize = true;
             this.spcfy.BackColor = System.Drawing.Color.Transparent;
             this.spcfy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spcfy.Location = new System.Drawing.Point(389, 303);
+            this.spcfy.Location = new System.Drawing.Point(384, 373);
             this.spcfy.Name = "spcfy";
             this.spcfy.Size = new System.Drawing.Size(160, 13);
             this.spcfy.TabIndex = 24;
@@ -343,7 +347,7 @@ namespace Contact_Tracing_App
             // 
             this.txtbxSPCFY.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbxSPCFY.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtbxSPCFY.Location = new System.Drawing.Point(392, 319);
+            this.txtbxSPCFY.Location = new System.Drawing.Point(387, 389);
             this.txtbxSPCFY.Name = "txtbxSPCFY";
             this.txtbxSPCFY.Size = new System.Drawing.Size(101, 25);
             this.txtbxSPCFY.TabIndex = 25;
@@ -365,7 +369,7 @@ namespace Contact_Tracing_App
             // 
             this.txtbxCNTCT.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbxCNTCT.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtbxCNTCT.Location = new System.Drawing.Point(295, 203);
+            this.txtbxCNTCT.Location = new System.Drawing.Point(272, 203);
             this.txtbxCNTCT.Name = "txtbxCNTCT";
             this.txtbxCNTCT.Size = new System.Drawing.Size(139, 25);
             this.txtbxCNTCT.TabIndex = 27;
@@ -377,7 +381,7 @@ namespace Contact_Tracing_App
             this.cntct.AutoSize = true;
             this.cntct.BackColor = System.Drawing.Color.Transparent;
             this.cntct.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cntct.Location = new System.Drawing.Point(305, 231);
+            this.cntct.Location = new System.Drawing.Point(284, 231);
             this.cntct.Name = "cntct";
             this.cntct.Size = new System.Drawing.Size(122, 13);
             this.cntct.TabIndex = 28;
@@ -385,13 +389,36 @@ namespace Contact_Tracing_App
             // 
             // adminbttn
             // 
-            this.adminbttn.Location = new System.Drawing.Point(16, 436);
+            this.adminbttn.Location = new System.Drawing.Point(16, 497);
             this.adminbttn.Name = "adminbttn";
             this.adminbttn.Size = new System.Drawing.Size(86, 37);
             this.adminbttn.TabIndex = 29;
             this.adminbttn.Text = "Admin";
             this.adminbttn.UseVisualStyleBackColor = true;
             this.adminbttn.Click += new System.EventHandler(this.adminbttn_Click);
+            // 
+            // date
+            // 
+            this.date.AutoSize = true;
+            this.date.Location = new System.Drawing.Point(503, 9);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(30, 13);
+            this.date.TabIndex = 30;
+            this.date.Text = "Date";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // time
+            // 
+            this.time.AutoSize = true;
+            this.time.Location = new System.Drawing.Point(636, 9);
+            this.time.Name = "time";
+            this.time.Size = new System.Drawing.Size(30, 13);
+            this.time.TabIndex = 31;
+            this.time.Text = "Time";
             // 
             // Form1
             // 
@@ -400,7 +427,9 @@ namespace Contact_Tracing_App
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(765, 480);
+            this.ClientSize = new System.Drawing.Size(765, 546);
+            this.Controls.Add(this.time);
+            this.Controls.Add(this.date);
             this.Controls.Add(this.adminbttn);
             this.Controls.Add(this.cntct);
             this.Controls.Add(this.txtbxCNTCT);
@@ -431,7 +460,7 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.txtbxMN);
             this.Controls.Add(this.fn);
             this.Controls.Add(this.txtbxFN);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -473,6 +502,9 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.TextBox txtbxCNTCT;
         private System.Windows.Forms.Label cntct;
         private System.Windows.Forms.Button adminbttn;
+        private System.Windows.Forms.Label date;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label time;
     }
 }
 
