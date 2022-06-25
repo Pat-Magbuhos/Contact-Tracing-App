@@ -20,8 +20,7 @@ namespace Contact_Tracing_App
 
         private void bttnsave_Click(object sender, EventArgs e)
         {
-            StreamWriter doc = new StreamWriter(@"C:\Users\Mags\Documents\Contact Tracing App\Record.txt", true);
-            doc.WriteLine("Date: " + txtbxDT.Text);
+            StreamWriter doc = new StreamWriter(@"C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\Records\" + date.Text + ".txt", true);
             doc.WriteLine("First Name: " + txtbxFN.Text);
             doc.WriteLine("Middle Name: " + txtbxMN.Text);
             doc.WriteLine("Last Name: " + txtbxLN.Text);
@@ -44,11 +43,11 @@ namespace Contact_Tracing_App
             txtbxBRNGY.Text = "";
             txtbxPRV.Text = "";
             txtbxAG.Text = "";
-            txtbxDT.Text = "";
             txtbxCNTCT.Text = "";
             txtbxTP.Text = "";
             txtbxSYMPTMS.Text = "";
             txtbxSPCFY.Text = "";
+
         }
 
         private void lst_Click(object sender, EventArgs e)
@@ -66,11 +65,6 @@ namespace Contact_Tracing_App
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            timer1.Start();
-        }
-
         private void adminbttn_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -81,10 +75,25 @@ namespace Contact_Tracing_App
             this.Show();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             date.Text = DateTime.Now.ToLongDateString();
             time.Text = DateTime.Now.ToLongTimeString();
+        }
+
+        private void cntct_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
