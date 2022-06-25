@@ -29,13 +29,26 @@ namespace Contact_Tracing_App
         /// </summary>
         private void InitializeComponent()
         {
+            this.Exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // Exit
+            // 
+            this.Exit.Font = new System.Drawing.Font("Papyrus", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit.Location = new System.Drawing.Point(594, 406);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(108, 32);
+            this.Exit.TabIndex = 33;
+            this.Exit.Text = "Close";
+            this.Exit.UseVisualStyleBackColor = true;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(714, 450);
+            this.Controls.Add(this.Exit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
             this.Text = "Admin Page";
@@ -44,5 +57,7 @@ namespace Contact_Tracing_App
         }
 
         #endregion
+
+        private System.Windows.Forms.Button Exit;
     }
 }

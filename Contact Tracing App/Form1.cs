@@ -93,7 +93,7 @@ namespace Contact_Tracing_App
 
         private void Exit_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
         }
     }
 }
