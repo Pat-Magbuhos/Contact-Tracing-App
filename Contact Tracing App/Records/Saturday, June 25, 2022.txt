@@ -10,3 +10,15 @@ Temperature: 36.5°C
 Experiencing andy Covid-19 Symptoms? YES
 Spcification: FEVER
 
+First Name: Alver Jose
+Middle Name: 
+Last Name: Estacion
+Street Address: B1 L3 Harurut Street
+Barangay: Barangay Anonas
+Province and Municipality: Metro Manila, Quezon City
+Age: 18 
+Contact Number: 09510037642
+Temperature: 36.5°C
+Experiencing andy Covid-19 Symptoms? No
+Spcification: None
+

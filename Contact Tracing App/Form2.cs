@@ -21,5 +21,29 @@ namespace Contact_Tracing_App
         {
             this.Close();
         }
+
+        private void verify_Click(object sender, EventArgs e)
+        {
+            string userid = "Admin";
+            string pass = "Admin101";
+
+            if (user.Text.Length > 0)
+            {
+                if (user.Text == userid && password.Text == pass)
+                {
+                    this.Hide();
+                    Form3 F3 = new Form3();
+
+                    F3.ShowDialog();
+                    F3 = null;
+                    this.Show();
+                }
+            }
+
+            else
+            {
+                MessageBox.Show("Unable to Identify User");
+            }
+        }
     }
 }

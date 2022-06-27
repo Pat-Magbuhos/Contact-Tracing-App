@@ -30,6 +30,11 @@ namespace Contact_Tracing_App
         private void InitializeComponent()
         {
             this.Exit = new System.Windows.Forms.Button();
+            this.user = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
+            this.verify = new System.Windows.Forms.Button();
+            this.userlabel = new System.Windows.Forms.Label();
+            this.passwordlabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Exit
@@ -43,21 +48,74 @@ namespace Contact_Tracing_App
             this.Exit.UseVisualStyleBackColor = true;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
+            // user
+            // 
+            this.user.Location = new System.Drawing.Point(241, 111);
+            this.user.Name = "user";
+            this.user.Size = new System.Drawing.Size(210, 20);
+            this.user.TabIndex = 34;
+            // 
+            // password
+            // 
+            this.password.Location = new System.Drawing.Point(241, 186);
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(210, 20);
+            this.password.TabIndex = 35;
+            // 
+            // verify
+            // 
+            this.verify.Location = new System.Drawing.Point(308, 241);
+            this.verify.Name = "verify";
+            this.verify.Size = new System.Drawing.Size(75, 23);
+            this.verify.TabIndex = 36;
+            this.verify.Text = "Sign in";
+            this.verify.UseVisualStyleBackColor = true;
+            this.verify.Click += new System.EventHandler(this.verify_Click);
+            // 
+            // userlabel
+            // 
+            this.userlabel.AutoSize = true;
+            this.userlabel.Location = new System.Drawing.Point(327, 134);
+            this.userlabel.Name = "userlabel";
+            this.userlabel.Size = new System.Drawing.Size(29, 13);
+            this.userlabel.TabIndex = 37;
+            this.userlabel.Text = "User";
+            // 
+            // passwordlabel
+            // 
+            this.passwordlabel.AutoSize = true;
+            this.passwordlabel.Location = new System.Drawing.Point(316, 209);
+            this.passwordlabel.Name = "passwordlabel";
+            this.passwordlabel.Size = new System.Drawing.Size(53, 13);
+            this.passwordlabel.TabIndex = 38;
+            this.passwordlabel.Text = "Password";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(714, 450);
+            this.Controls.Add(this.passwordlabel);
+            this.Controls.Add(this.userlabel);
+            this.Controls.Add(this.verify);
+            this.Controls.Add(this.password);
+            this.Controls.Add(this.user);
             this.Controls.Add(this.Exit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
             this.Text = "Admin Page";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button Exit;
+        private System.Windows.Forms.TextBox user;
+        private System.Windows.Forms.TextBox password;
+        private System.Windows.Forms.Button verify;
+        private System.Windows.Forms.Label userlabel;
+        private System.Windows.Forms.Label passwordlabel;
     }
 }
