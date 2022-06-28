@@ -28,22 +28,42 @@ namespace Contact_Tracing_App
                 string path = @"C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\Records\";
                 string path2 = @"C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\Records\All\";
                 string[] files = Directory.GetFiles(path, "*.txt", SearchOption.TopDirectoryOnly);
-            using (var output = File.Create(path2 + "Records.txt"))
-            {
-                foreach (var file in files)
+            
+                using (var output = File.Create(path2 + "Records.txt"))
                 {
-                    using (var data = File.OpenRead(file))
+                    foreach (var file in files)
                     {
-                        data.CopyTo(output);
+                        using (var data = File.OpenRead(file))
+                        {
+                            data.CopyTo(output);
+                         }
+                    }
+                 }
+
+                string path3 = @"C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\Records\All\Records.txt";
+                var rst = File.ReadAllText(path3);
+                rslts.Text = rst;
+
+          
+        }
+
+        private void fltrbttn_Click(object sender, EventArgs e)
+        {
+            string path4 = @"C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\Records\";
+            string path5 = @"C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\Records\Searches\";
+            string[] docs = Directory.GetFiles(path4, dateTimeFilter.Text + ".txt", SearchOption.TopDirectoryOnly);
+
+            using (var rslt = File.Create(path5 + dateTimeFilter.Text + " (SEARCH).txt"))
+            {
+                foreach (var doc in docs)
+                {
+                    using (var data = File.OpenRead(doc))
+                    {
+                        data.CopyTo(rslt);
                     }
                 }
             }
-
-            string path3 = @"C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\Records\All\Records.txt";
-            var rst = File.ReadAllText(path3);
-            rslts.Text = rst;
-
-
+                
         }
     }
 }

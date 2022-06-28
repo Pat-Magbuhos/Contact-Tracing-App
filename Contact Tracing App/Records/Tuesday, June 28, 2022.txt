@@ -58,3 +58,15 @@ Temperature: 36.5°C
 Experiencing andy Covid-19 Symptoms? NO
 Spcification: NONE
 
+First Name: Angelica
+Middle Name: Basillio
+Last Name: Suarez
+Street Address: CHAMPACA STREET
+Barangay: BARANGAY 178
+Province and Municipality: METRO MANILA, QUEZON CITY
+Age: 19
+Contact Number: 09510037642
+Temperature: 36.5°C
+Experiencing andy Covid-19 Symptoms? NO
+Spcification: NONE
+
