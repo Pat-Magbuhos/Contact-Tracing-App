@@ -64,6 +64,7 @@ namespace Contact_Tracing_App
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.time = new System.Windows.Forms.Label();
             this.Exit = new System.Windows.Forms.Button();
+            this.qrscan = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtbxFN
@@ -440,6 +441,17 @@ namespace Contact_Tracing_App
             this.Exit.UseVisualStyleBackColor = false;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
+            // qrscan
+            // 
+            this.qrscan.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qrscan.Location = new System.Drawing.Point(182, 383);
+            this.qrscan.Name = "qrscan";
+            this.qrscan.Size = new System.Drawing.Size(115, 81);
+            this.qrscan.TabIndex = 33;
+            this.qrscan.Text = "SMART SCANNER";
+            this.qrscan.UseVisualStyleBackColor = true;
+            this.qrscan.Click += new System.EventHandler(this.qrscan_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -449,6 +461,7 @@ namespace Contact_Tracing_App
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(765, 546);
+            this.Controls.Add(this.qrscan);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.time);
             this.Controls.Add(this.date);
@@ -526,6 +539,7 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label time;
         private System.Windows.Forms.Button Exit;
+        private System.Windows.Forms.Button qrscan;
     }
 }
 

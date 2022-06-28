@@ -95,5 +95,15 @@ namespace Contact_Tracing_App
         {
             this.Close();
         }
+
+        private void qrscan_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form4 F4 = new Form4();
+
+            F4.ShowDialog();
+            F4 = null;
+            this.Show();
+        }
     }
 }
