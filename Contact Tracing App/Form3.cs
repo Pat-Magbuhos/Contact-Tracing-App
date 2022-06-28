@@ -38,6 +38,12 @@ namespace Contact_Tracing_App
                     }
                 }
             }
+
+            string path3 = @"C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\Records\All\Records.txt";
+            var rst = File.ReadAllText(path3);
+            rslts.Text = rst;
+
+
         }
     }
 }

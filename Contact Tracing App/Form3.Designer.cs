@@ -31,6 +31,7 @@ namespace Contact_Tracing_App
         {
             this.Exit = new System.Windows.Forms.Button();
             this.shwrcrds = new System.Windows.Forms.Button();
+            this.rslts = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Exit
@@ -46,7 +47,7 @@ namespace Contact_Tracing_App
             // 
             // shwrcrds
             // 
-            this.shwrcrds.Location = new System.Drawing.Point(280, 122);
+            this.shwrcrds.Location = new System.Drawing.Point(12, 12);
             this.shwrcrds.Name = "shwrcrds";
             this.shwrcrds.Size = new System.Drawing.Size(128, 23);
             this.shwrcrds.TabIndex = 35;
@@ -54,17 +55,27 @@ namespace Contact_Tracing_App
             this.shwrcrds.UseVisualStyleBackColor = true;
             this.shwrcrds.Click += new System.EventHandler(this.shwrcrds_Click);
             // 
+            // rslts
+            // 
+            this.rslts.Location = new System.Drawing.Point(12, 41);
+            this.rslts.Multiline = true;
+            this.rslts.Name = "rslts";
+            this.rslts.Size = new System.Drawing.Size(690, 348);
+            this.rslts.TabIndex = 36;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(714, 450);
+            this.Controls.Add(this.rslts);
             this.Controls.Add(this.shwrcrds);
             this.Controls.Add(this.Exit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form3";
             this.Text = "Form3";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -72,5 +83,6 @@ namespace Contact_Tracing_App
 
         private System.Windows.Forms.Button Exit;
         private System.Windows.Forms.Button shwrcrds;
+        private System.Windows.Forms.TextBox rslts;
     }
 }
