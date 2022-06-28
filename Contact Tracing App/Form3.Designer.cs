@@ -30,6 +30,7 @@ namespace Contact_Tracing_App
         private void InitializeComponent()
         {
             this.Exit = new System.Windows.Forms.Button();
+            this.shwrcrds = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Exit
@@ -43,11 +44,22 @@ namespace Contact_Tracing_App
             this.Exit.UseVisualStyleBackColor = true;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
+            // shwrcrds
+            // 
+            this.shwrcrds.Location = new System.Drawing.Point(280, 122);
+            this.shwrcrds.Name = "shwrcrds";
+            this.shwrcrds.Size = new System.Drawing.Size(128, 23);
+            this.shwrcrds.TabIndex = 35;
+            this.shwrcrds.Text = "Show Records";
+            this.shwrcrds.UseVisualStyleBackColor = true;
+            this.shwrcrds.Click += new System.EventHandler(this.shwrcrds_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(714, 450);
+            this.Controls.Add(this.shwrcrds);
             this.Controls.Add(this.Exit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form3";
@@ -59,5 +71,6 @@ namespace Contact_Tracing_App
         #endregion
 
         private System.Windows.Forms.Button Exit;
+        private System.Windows.Forms.Button shwrcrds;
     }
 }
