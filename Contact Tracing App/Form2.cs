@@ -35,8 +35,6 @@ namespace Contact_Tracing_App
                     Form3 F3 = new Form3();
 
                     F3.ShowDialog();
-                    F3 = null;
-                    this.Show();
                 }
                 
                 else

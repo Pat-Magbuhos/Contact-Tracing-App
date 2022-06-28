@@ -22,3 +22,27 @@ Temperature:  36.5°C
 Experiencing andy Covid-19 Symptoms? NO
 Spcification: NONE
 
+First Name: Patrick
+Middle Name: Rey
+Last Name: Magbuhos
+Street Address: B1 L4
+Barangay: 175
+Province and Municipality: METRO MANILA, QUEZON CITY
+Age: 19
+Contact Number:  09510037642
+Temperature: 36.5°C
+Experiencing andy Covid-19 Symptoms? NO
+Spcification: NONE
+
+First Name: Mark
+Middle Name: Suarez
+Last Name: Basillio
+Street Address: CHAMPACA STREET
+Barangay: BARANGAY 178
+Province and Municipality: METRO MANILA, QUEZON CITY
+Age: 21
+Contact Number: 09513347832
+Temperature: 36.5°C
+Experiencing andy Covid-19 Symptoms? NO
+Spcification: NONE
+
