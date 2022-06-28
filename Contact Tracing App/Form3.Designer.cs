@@ -60,6 +60,7 @@ namespace Contact_Tracing_App
             this.rslts.Location = new System.Drawing.Point(12, 41);
             this.rslts.Multiline = true;
             this.rslts.Name = "rslts";
+            this.rslts.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.rslts.Size = new System.Drawing.Size(690, 348);
             this.rslts.TabIndex = 36;
             // 

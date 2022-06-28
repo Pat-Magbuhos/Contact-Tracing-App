@@ -38,12 +38,13 @@ namespace Contact_Tracing_App
                     F3 = null;
                     this.Show();
                 }
+                
+                else
+                {
+                    MessageBox.Show("Unable to Identify User");
+                }
             }
 
-            else
-            {
-                MessageBox.Show("Unable to Identify User");
-            }
         }
     }
 }
