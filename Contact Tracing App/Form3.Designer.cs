@@ -41,9 +41,9 @@ namespace Contact_Tracing_App
             // 
             this.Exit.BackColor = System.Drawing.Color.Snow;
             this.Exit.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Exit.Location = new System.Drawing.Point(646, 414);
+            this.Exit.Location = new System.Drawing.Point(637, 406);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(56, 24);
+            this.Exit.Size = new System.Drawing.Size(65, 32);
             this.Exit.TabIndex = 34;
             this.Exit.Text = "Close";
             this.Exit.UseVisualStyleBackColor = false;
