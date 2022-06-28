@@ -16,7 +16,7 @@ namespace Contact_Tracing_App
         public Form3()
         {
             InitializeComponent();
-            
+
         }
         private void Exit_Click(object sender, EventArgs e)
         {
@@ -25,26 +25,26 @@ namespace Contact_Tracing_App
 
         private void shwrcrds_Click(object sender, EventArgs e)
         {
-                string path = @"C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\Records\";
-                string path2 = @"C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\Records\All\";
-                string[] files = Directory.GetFiles(path, "*.txt", SearchOption.TopDirectoryOnly);
-            
-                using (var output = File.Create(path2 + "Records.txt"))
+            string path = @"C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\Records\";
+            string path2 = @"C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\Records\All\";
+            string[] files = Directory.GetFiles(path, "*.txt", SearchOption.TopDirectoryOnly);
+
+            using (var output = File.Create(path2 + "Records.txt"))
+            {
+                foreach (var file in files)
                 {
-                    foreach (var file in files)
+                    using (var data = File.OpenRead(file))
                     {
-                        using (var data = File.OpenRead(file))
-                        {
-                            data.CopyTo(output);
-                         }
+                        data.CopyTo(output);
                     }
-                 }
+                }
+            }
 
-                string path3 = @"C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\Records\All\Records.txt";
-                var rst = File.ReadAllText(path3);
-                rslts.Text = rst;
+            string path3 = @"C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\Records\All\Records.txt";
+            var rst = File.ReadAllText(path3);
+            rslts.Text = rst;
 
-          
+
         }
 
         private void fltrbttn_Click(object sender, EventArgs e)

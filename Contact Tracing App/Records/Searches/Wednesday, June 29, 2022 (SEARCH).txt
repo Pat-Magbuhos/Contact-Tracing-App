@@ -1,0 +1,24 @@
+First Name: Louise Jenny
+Middle Name: Ganda
+Last Name: Velasco
+Street Address: CHAMPACA STREET
+Barangay: BARANGAY 168
+Province and Municipality: METRO MANILA, QUEZON CITY
+Age: 19
+Contact Number: 09510037642
+Temperature: 36.5°C
+Experiencing andy Covid-19 Symptoms? NO
+Spcification: NONE
+
+First Name: Vincent
+Middle Name: Amba
+Last Name: Abesamis
+Street Address: ATRIUM
+Barangay: BARANGAY 162
+Province and Municipality: METRO MANIA, QUEZON CITY
+Age: 19
+Contact Number: 09223648293
+Temperature:  36.5°C
+Experiencing andy Covid-19 Symptoms? NO
+Spcification: NONE
+
