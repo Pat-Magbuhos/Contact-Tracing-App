@@ -63,7 +63,9 @@ namespace Contact_Tracing_App
                     }
                 }
             }
-                
+
+            var rst = File.ReadAllText(path5 + dateTimeFilter.Text + " (SEARCH).txt");
+            rslts.Text = rst;
         }
     }
 }
