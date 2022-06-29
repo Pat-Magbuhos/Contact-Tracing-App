@@ -30,8 +30,8 @@ namespace Contact_Tracing_App
             doc.WriteLine("Age: " + txtbxAG.Text);
             doc.WriteLine("Contact Number: " + txtbxCNTCT.Text);
             doc.WriteLine("Temperature: " + txtbxTP.Text);
-            doc.WriteLine("Experiencing andy Covid-19 Symptoms? " + txtbxSYMPTMS.Text);
-            doc.WriteLine("Spcification: " + txtbxSPCFY.Text);
+            doc.WriteLine("Experiencing any Covid-19 Symptoms? " + txtbxSYMPTMS.Text);
+            doc.WriteLine("Specification: " + txtbxSPCFY.Text);
             doc.WriteLine("");
             doc.Close();
 
