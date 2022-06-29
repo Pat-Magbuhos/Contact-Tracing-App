@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AForge.Video;
 using AForge.Video.DirectShow;
-
+using ZXing;
 
 namespace Contact_Tracing_App
 {
@@ -42,6 +42,7 @@ namespace Contact_Tracing_App
             captureDevice = new VideoCaptureDevice(filterInfoCollection[camchoices.SelectedIndex].MonikerString);
             captureDevice.NewFrame += CaptureDevice_NewFrame;
             captureDevice.Start();
+            camTimer.Start();
         }
 
         private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
@@ -54,6 +55,23 @@ namespace Contact_Tracing_App
             if (captureDevice.IsRunning)
                 captureDevice.Stop();
    
+        }
+
+        private void camTimer_Tick(object sender, EventArgs e)
+        {
+            if(campreview.Image != null)
+            {
+                BarcodeReader barcodeReader = new BarcodeReader();
+                Result result = barcodeReader.Decode((Bitmap)campreview.Image);
+
+                if (result != null)
+                {
+                    generateqr.Text = result.ToString();
+                    camTimer.Stop();
+                    if (captureDevice.IsRunning)
+                        captureDevice.Stop();
+                }
+            }
         }
     }
 }

@@ -29,12 +29,14 @@ namespace Contact_Tracing_App
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Exit = new System.Windows.Forms.Button();
             this.camlbl = new System.Windows.Forms.Label();
             this.camchoices = new System.Windows.Forms.ComboBox();
             this.campreview = new System.Windows.Forms.PictureBox();
             this.cptr = new System.Windows.Forms.Button();
             this.generateqr = new System.Windows.Forms.TextBox();
+            this.camTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.campreview)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,6 +98,10 @@ namespace Contact_Tracing_App
             this.generateqr.Size = new System.Drawing.Size(408, 289);
             this.generateqr.TabIndex = 39;
             // 
+            // camTimer
+            // 
+            this.camTimer.Tick += new System.EventHandler(this.camTimer_Tick);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -127,5 +133,6 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.PictureBox campreview;
         private System.Windows.Forms.Button cptr;
         private System.Windows.Forms.TextBox generateqr;
+        private System.Windows.Forms.Timer camTimer;
     }
 }
