@@ -39,7 +39,21 @@ namespace Contact_Tracing_App
 
         private void cptr_Click(object sender, EventArgs e)
         {
-           
+            captureDevice = new VideoCaptureDevice(filterInfoCollection[camchoices.SelectedIndex].MonikerString);
+            captureDevice.NewFrame += CaptureDevice_NewFrame;
+            captureDevice.Start();
+        }
+
+        private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        {
+            campreview.Image = (Bitmap)eventArgs.Frame.Clone();
+        }
+
+        private void Form4_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (captureDevice.IsRunning)
+                captureDevice.Stop();
+   
         }
     }
 }
