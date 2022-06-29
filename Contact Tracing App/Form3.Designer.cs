@@ -106,6 +106,7 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.Exit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
             this.ResumeLayout(false);
             this.PerformLayout();

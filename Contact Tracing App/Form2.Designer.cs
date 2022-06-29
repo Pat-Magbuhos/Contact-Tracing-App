@@ -118,6 +118,7 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.Exit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin Page";
             this.ResumeLayout(false);
             this.PerformLayout();
