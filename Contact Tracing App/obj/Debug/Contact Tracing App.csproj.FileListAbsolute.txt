@@ -23,3 +23,4 @@ C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\bin\Debug\zxi
 C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\bin\Debug\zxing.presentation.xml
 C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\Contact Tracing App.csproj.CopyComplete
 C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\obj\Debug\Contact_Tracing_App.Form5.resources
+C:\Users\Mags\source\repos\Contact Tracing App\Contact Tracing App\bin\Debug\QRCoder.dll

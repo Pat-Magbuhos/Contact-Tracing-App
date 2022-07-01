@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QRCoder;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,14 @@ namespace Contact_Tracing_App
         private void Exit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void bttngenerate_Click(object sender, EventArgs e)
+        {
+            QRCodeGenerator qr = new QRCodeGenerator();
+            QRCodeData data = qr.CreateQrCode(txtbxinput.Text, QRCodeGenerator.ECCLevel.Q);
+            QRCode code = new QRCode(data);
+            qrpic.Image = code.GetGraphic(5);
         }
     }
 }

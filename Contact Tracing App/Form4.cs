@@ -52,9 +52,18 @@ namespace Contact_Tracing_App
 
         private void Form4_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (captureDevice.IsRunning)
-                captureDevice.Stop();
-   
+            if (captureDevice == null)
+            {
+                this.Close();
+            }
+            else
+            {
+                if (captureDevice.IsRunning)
+                {
+                    captureDevice.Stop();
+                }
+            }
+                
         }
 
         private void camTimer_Tick(object sender, EventArgs e)
