@@ -120,10 +120,13 @@
   <metadata name="camTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="internetTime.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>122, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        /9j/4AAQSkZJRgABAQEASABIAAD/4QEKRXhpZgAATU0AKgAAAAgACAEOAAIAAAA4AAAAbgESAAMAAAAB
+        /9j/4AAQSkZJRgABAQEAlgCWAAD/4QEKRXhpZgAATU0AKgAAAAgACAEOAAIAAAA4AAAAbgESAAMAAAAB
         AAEAAAEaAAUAAAABAAAApgEbAAUAAAABAAAArgEoAAMAAAABAAIAAAExAAIAAAAkAAAAtgEyAAIAAAAU
         AAAA2odpAAQAAAABAAAA7gAAAABMaW5lIGNvbG9yZnVscyBzaGFwZXMgdmVjdG9yIGRlc2lnbiBhYnN0
         cmFjdCBiYWNrZ3JvdW5kAACWAAAAAQAAAJYAAAABAABBZG9iZSBJbGx1c3RyYXRvciBDQyAyMi4xIChX

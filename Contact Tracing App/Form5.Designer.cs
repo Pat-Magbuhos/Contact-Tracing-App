@@ -29,6 +29,7 @@ namespace Contact_Tracing_App
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.Exit = new System.Windows.Forms.Button();
             this.bttngenerate = new System.Windows.Forms.Button();
             this.qrlabel = new System.Windows.Forms.Label();
@@ -52,20 +53,23 @@ namespace Contact_Tracing_App
             // 
             // bttngenerate
             // 
+            this.bttngenerate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.bttngenerate.Location = new System.Drawing.Point(395, 496);
             this.bttngenerate.Name = "bttngenerate";
             this.bttngenerate.Size = new System.Drawing.Size(75, 23);
             this.bttngenerate.TabIndex = 36;
             this.bttngenerate.Text = "GENERATE";
-            this.bttngenerate.UseVisualStyleBackColor = true;
+            this.bttngenerate.UseVisualStyleBackColor = false;
             this.bttngenerate.Click += new System.EventHandler(this.bttngenerate_Click);
             // 
             // qrlabel
             // 
             this.qrlabel.AutoSize = true;
+            this.qrlabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.qrlabel.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qrlabel.Location = new System.Drawing.Point(43, 18);
             this.qrlabel.Name = "qrlabel";
-            this.qrlabel.Size = new System.Drawing.Size(56, 13);
+            this.qrlabel.Size = new System.Drawing.Size(62, 13);
             this.qrlabel.TabIndex = 37;
             this.qrlabel.Text = "QR CODE";
             // 
@@ -78,9 +82,9 @@ namespace Contact_Tracing_App
             this.txtbxinput.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtbxinput.Size = new System.Drawing.Size(424, 80);
             this.txtbxinput.TabIndex = 38;
-            this.txtbxinput.Text = "First Name:\r\nMiddle Name:\r\nLast Name:\r\nStreet Address:\r\nBarangay:\r\nProvince and M" +
-    "unicipality:\r\nAge:\r\nContact Number:\r\nTemperature:\r\nExperiencing any Covid-19 Sym" +
-    "ptoms? \r\nSpecification:";
+            this.txtbxinput.Text = "(FirstName) (MiddleName) (LastName)\r\n(StreetAddress) (Barangay) (ProvinceAndMunic" +
+    "ipality)\r\n(Age)\r\n(ContactNumber)\r\n(Temperature)\r\n(Experiencing any Covid-19 Symp" +
+    "toms? )\r\n(Specification)";
             // 
             // qrpic
             // 
@@ -94,18 +98,21 @@ namespace Contact_Tracing_App
             // 
             // bttnsave
             // 
+            this.bttnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.bttnsave.Location = new System.Drawing.Point(46, 496);
             this.bttnsave.Name = "bttnsave";
             this.bttnsave.Size = new System.Drawing.Size(75, 23);
             this.bttnsave.TabIndex = 40;
             this.bttnsave.Text = "SAVE QR";
-            this.bttnsave.UseVisualStyleBackColor = true;
+            this.bttnsave.UseVisualStyleBackColor = false;
             this.bttnsave.Click += new System.EventHandler(this.bttnsave_Click);
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(517, 572);
             this.Controls.Add(this.bttnsave);
             this.Controls.Add(this.qrpic);

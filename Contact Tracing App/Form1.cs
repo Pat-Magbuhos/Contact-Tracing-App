@@ -35,7 +35,7 @@ namespace Contact_Tracing_App
             doc.WriteLine("");
             doc.Close();
 
-            MessageBox.Show("Thank You for Participating! Stay Safe");
+            MessageBox.Show("Thank You for Participating, Stay Safe");
             txtbxFN.Text = "";
             txtbxMN.Text = "";
             txtbxLN.Text = "";
