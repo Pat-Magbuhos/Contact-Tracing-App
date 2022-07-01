@@ -73,5 +73,15 @@ namespace Contact_Tracing_App
                 }
             }
         }
+
+        private void generatebttn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form5 F5 = new Form5();
+
+            F5.ShowDialog();
+            F5 = null;
+            this.Show();
+        }
     }
 }

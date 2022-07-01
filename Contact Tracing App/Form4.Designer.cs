@@ -30,6 +30,7 @@ namespace Contact_Tracing_App
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.Exit = new System.Windows.Forms.Button();
             this.camlbl = new System.Windows.Forms.Label();
             this.camchoices = new System.Windows.Forms.ComboBox();
@@ -37,6 +38,7 @@ namespace Contact_Tracing_App
             this.cptr = new System.Windows.Forms.Button();
             this.generateqr = new System.Windows.Forms.TextBox();
             this.camTimer = new System.Windows.Forms.Timer(this.components);
+            this.generatebttn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.campreview)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,6 +66,7 @@ namespace Contact_Tracing_App
             // 
             // camchoices
             // 
+            this.camchoices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.camchoices.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.camchoices.FormattingEnabled = true;
             this.camchoices.Location = new System.Drawing.Point(86, 17);
@@ -81,17 +84,19 @@ namespace Contact_Tracing_App
             // 
             // cptr
             // 
+            this.cptr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.cptr.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cptr.Location = new System.Drawing.Point(24, 198);
             this.cptr.Name = "cptr";
             this.cptr.Size = new System.Drawing.Size(75, 23);
             this.cptr.TabIndex = 38;
             this.cptr.Text = "CAPTURE";
-            this.cptr.UseVisualStyleBackColor = true;
+            this.cptr.UseVisualStyleBackColor = false;
             this.cptr.Click += new System.EventHandler(this.cptr_Click);
             // 
             // generateqr
             // 
+            this.generateqr.BackColor = System.Drawing.Color.Snow;
             this.generateqr.Location = new System.Drawing.Point(276, 18);
             this.generateqr.Multiline = true;
             this.generateqr.Name = "generateqr";
@@ -102,11 +107,26 @@ namespace Contact_Tracing_App
             // 
             this.camTimer.Tick += new System.EventHandler(this.camTimer_Tick);
             // 
+            // generatebttn
+            // 
+            this.generatebttn.BackColor = System.Drawing.Color.Snow;
+            this.generatebttn.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.generatebttn.Location = new System.Drawing.Point(16, 407);
+            this.generatebttn.Name = "generatebttn";
+            this.generatebttn.Size = new System.Drawing.Size(83, 31);
+            this.generatebttn.TabIndex = 40;
+            this.generatebttn.Text = "GENERATE";
+            this.generatebttn.UseVisualStyleBackColor = false;
+            this.generatebttn.Click += new System.EventHandler(this.generatebttn_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(714, 450);
+            this.Controls.Add(this.generatebttn);
             this.Controls.Add(this.generateqr);
             this.Controls.Add(this.cptr);
             this.Controls.Add(this.campreview);
@@ -134,5 +154,6 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.Button cptr;
         private System.Windows.Forms.TextBox generateqr;
         private System.Windows.Forms.Timer camTimer;
+        private System.Windows.Forms.Button generatebttn;
     }
 }

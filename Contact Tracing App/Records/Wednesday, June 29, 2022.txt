@@ -1,4 +1,4 @@
-First Name: Louise Jenny
+﻿First Name: Louise Jenny
 Middle Name: Ganda
 Last Name: Velasco
 Street Address: CHAMPACA STREET
@@ -7,8 +7,8 @@ Province and Municipality: METRO MANILA, QUEZON CITY
 Age: 19
 Contact Number: 09510037642
 Temperature: 36.5°C
-Experiencing andy Covid-19 Symptoms? NO
-Spcification: NONE
+Experiencing any Covid-19 Symptoms? NO
+Specification: NONE
 
 First Name: Vincent
 Middle Name: Amba
@@ -19,8 +19,8 @@ Province and Municipality: METRO MANIA, QUEZON CITY
 Age: 19
 Contact Number: 09223648293
 Temperature:  36.5°C
-Experiencing andy Covid-19 Symptoms? NO
-Spcification: NONE
+Experiencing any Covid-19 Symptoms? NO
+Specification: NONE
 
 First Name: Patrick
 Middle Name: Rey
@@ -31,8 +31,8 @@ Province and Municipality: METRO MANILA, QUEZON CITY
 Age: 19
 Contact Number:  09510037642
 Temperature: 36.5°C
-Experiencing andy Covid-19 Symptoms? NO
-Spcification: NONE
+Experiencing any Covid-19 Symptoms? NO
+Specification: NONE
 
 First Name: Mark
 Middle Name: Suarez
@@ -43,6 +43,6 @@ Province and Municipality: METRO MANILA, QUEZON CITY
 Age: 21
 Contact Number: 09513347832
 Temperature: 36.5°C
-Experiencing andy Covid-19 Symptoms? NO
-Spcification: NONE
+Experiencing any Covid-19 Symptoms? NO
+Specification: NONE
 

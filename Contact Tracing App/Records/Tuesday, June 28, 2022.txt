@@ -1,4 +1,4 @@
-First Name: Kyla
+﻿First Name: Kyla
 Middle Name: Malvis
 Last Name: Brenton
 Street Address: B2 L4 BROKLY STREET
@@ -7,8 +7,8 @@ Province and Municipality: METRO MANILA, QUEZON CITY
 Age: 20
 Contact Number: 09647837568
 Temperature: 37°C
-Experiencing andy Covid-19 Symptoms? NO
-Spcification: NONE
+Experiencing any Covid-19 Symptoms? NO
+Specification: NONE
 
 First Name: John Lloyd
 Middle Name: Asenjo
@@ -19,8 +19,8 @@ Province and Municipality: METRO MANILA, QUEZON CITY
 Age: 20
 Contact Number: 09874352287
 Temperature: 37°C
-Experiencing andy Covid-19 Symptoms? NO
-Spcification: NONE
+Experiencing any Covid-19 Symptoms? NO
+Specification: NONE
 
 First Name: Melody
 Middle Name: Mallari
@@ -31,8 +31,8 @@ Province and Municipality: METRO MANILA, QUEZON CITY
 Age: 19
 Contact Number: 09538873901
 Temperature: 36.5°C
-Experiencing andy Covid-19 Symptoms? NO
-Spcification: NONE
+Experiencing any Covid-19 Symptoms? NO
+Specification: NONE
 
 First Name: Juan
 Middle Name: Raymundo
@@ -43,8 +43,8 @@ Province and Municipality: Metro Manila, Quezon City
 Age:  18 
 Contact Number:  09510037642
 Temperature: 36.5°C
-Experiencing andy Covid-19 Symptoms? No
-Spcification: None
+Experiencing any Covid-19 Symptoms? No
+Specification: None
 
 First Name: Maria
 Middle Name: Grande
@@ -55,8 +55,8 @@ Province and Municipality: METRO MANILA, QUEZON CITY
 Age: 25
 Contact Number: 09756377488
 Temperature: 36.5°C
-Experiencing andy Covid-19 Symptoms? NO
-Spcification: NONE
+Experiencing any Covid-19 Symptoms? NO
+Specification: NONE
 
 First Name: Angelica
 Middle Name: Basillio
@@ -67,6 +67,6 @@ Province and Municipality: METRO MANILA, QUEZON CITY
 Age: 19
 Contact Number: 09510037642
 Temperature: 36.5°C
-Experiencing andy Covid-19 Symptoms? NO
-Spcification: NONE
+Experiencing any Covid-19 Symptoms? NO
+Specification: NONE
 

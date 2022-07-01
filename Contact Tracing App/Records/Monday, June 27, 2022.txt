@@ -1,4 +1,4 @@
-First Name: Nathaniel
+﻿First Name: Nathaniel
 Middle Name: Veil
 Last Name: Pulvinar
 Street Address: B1 MAHAL KO PA SIYA
@@ -7,6 +7,6 @@ Province and Municipality: METRO MANILA, QUEZON CITY
 Age: 18 
 Contact Number: 0951063425
 Temperature: 36.5°C
-Experiencing andy Covid-19 Symptoms? NO
-Spcification: NONE
+Experiencing any Covid-19 Symptoms? NO
+Specification: NONE
 
