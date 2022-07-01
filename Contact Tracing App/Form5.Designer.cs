@@ -34,6 +34,7 @@ namespace Contact_Tracing_App
             this.qrlabel = new System.Windows.Forms.Label();
             this.txtbxinput = new System.Windows.Forms.TextBox();
             this.qrpic = new System.Windows.Forms.PictureBox();
+            this.bttnsave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.qrpic)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,11 +92,22 @@ namespace Contact_Tracing_App
             this.qrpic.TabIndex = 39;
             this.qrpic.TabStop = false;
             // 
+            // bttnsave
+            // 
+            this.bttnsave.Location = new System.Drawing.Point(46, 496);
+            this.bttnsave.Name = "bttnsave";
+            this.bttnsave.Size = new System.Drawing.Size(75, 23);
+            this.bttnsave.TabIndex = 40;
+            this.bttnsave.Text = "SAVE QR";
+            this.bttnsave.UseVisualStyleBackColor = true;
+            this.bttnsave.Click += new System.EventHandler(this.bttnsave_Click);
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(517, 572);
+            this.Controls.Add(this.bttnsave);
             this.Controls.Add(this.qrpic);
             this.Controls.Add(this.txtbxinput);
             this.Controls.Add(this.qrlabel);
@@ -117,5 +129,6 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.Label qrlabel;
         private System.Windows.Forms.TextBox txtbxinput;
         private System.Windows.Forms.PictureBox qrpic;
+        private System.Windows.Forms.Button bttnsave;
     }
 }
